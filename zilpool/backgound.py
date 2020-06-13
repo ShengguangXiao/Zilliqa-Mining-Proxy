@@ -47,7 +47,8 @@ async def update_chain_info(config):
 async def start_background_tasks(app):
     config = app["config"]
     if config["zilliqa"]["enabled"]:
-        app["zil_background"] = app.loop.create_task(update_chain_info(config))
+        loop = asyncio.get_event_loop()
+        app["zil_background"] = loop.create_task(update_chain_info(config))
 
 
 async def cleanup_background_tasks(app):

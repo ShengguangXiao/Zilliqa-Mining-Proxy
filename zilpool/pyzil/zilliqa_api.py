@@ -20,6 +20,7 @@
 
 import ssl
 import asyncio
+import aiohttp
 import logging
 import concurrent
 
@@ -53,7 +54,7 @@ class API:
         self.api_client = None
 
     async def init_client(self):
-        self.session = ClientSession(loop=self.loop)
+        self.session = aiohttp.ClientSession() #ClientSession(loop=self.loop)
         self.api_client = AiohttpClient(
             self.session,
             self.endpoint,

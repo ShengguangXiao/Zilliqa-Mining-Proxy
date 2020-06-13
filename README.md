@@ -50,5 +50,6 @@ The setup architecture is illustrated in the image shown below. All communicatio
         
 5. Run Zilliqa proxy server
     ```bash
+    service mongod start
     python start.py
     ```

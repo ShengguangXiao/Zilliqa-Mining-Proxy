@@ -29,7 +29,7 @@ install_requires = [
     "pyyaml", "jsonrpcserver", "aiohttp", "jsonrpcclient[aiohttp]",
     "mongoengine", "pymongo", "cachetools",
     "fastecdsa", "pyethash", "eth-hash[pycryptodome]",
-    "jinja2", "aiohttp_jinja2",
+    "jinja2", "aiohttp_jinja2", 'requests',
 ]
 
 setup(

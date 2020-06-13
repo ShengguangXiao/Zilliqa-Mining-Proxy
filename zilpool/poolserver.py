@@ -24,6 +24,7 @@ from logging import handlers
 import time
 
 import asyncio
+import aiohttp
 from json import dumps
 from functools import partial
 from aiohttp import web
